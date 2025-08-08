@@ -4,10 +4,8 @@ import axios from 'axios'
 import sendmail from "./sendmail.js";
 import {PrismaClient} from "@prisma/client";
 import { SarvamAIClient } from "sarvamai";
-const geminikey = 'AIzaSyCXOebhtl9y86YNQn2527UiabG6evK_xGs'
-const sarvamkey ='sk_rzrvbw2g_II9QPeaILK33qBZyWSGKFKOc'
-//postgres://avnadmin:AVNS_QFiYtqe7R-ITlx4ZIHf@pg-b46bdc-aiagent-michaeljackson4321p-f8d4.d.aivencloud.com:26490/defaultdb?sslmode=require
-//pass=AVNS_QFiYtqe7R-ITlx4ZIHf
+
+//
 //avnadmin
 const prisma = new PrismaClient()
 const sarvamclient = new SarvamAIClient({
@@ -340,3 +338,4 @@ async function start() {
 start()
 // const ak = await prisma.mail.findMany({})
 // console.log(ak);
+
